@@ -1,0 +1,295 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+
+html {
+     font-size: 70.5%;
+     scroll-behavior: smooth;
+     font-family: 'Poppins', sans-serif;
+     background-color: #FAFFFB;
+}
+
+body {
+     --main-color: #4B8E71;
+     --primary-color: #6B9080;
+     --paragraph-color: #8BAB99;
+     --button-background: #DA7650;
+     --primary-button-background: #fe7649;
+     --background-color: #CCE3DE;
+     --hover-color: #5c9ceb;
+}
+
+
+/* Navbar Section */
+
+header {
+     padding: 0 12.8rem;
+     width: 100%;
+     height: 8rem;
+     background-color: var(--background-color);
+     display: flex;
+     justify-content: end;
+     align-items: center;
+}
+
+.logo-link {
+     width: 40%;
+     display: flex;
+}
+
+.logo {
+     height: auto;
+     max-width: 30%;
+}
+
+nav {
+     width: 68%;
+     align-items: center;
+}
+
+.navbar-list {
+     display: flex;
+     gap: 4.6rem;
+}
+
+
+li {
+     list-style: none;
+}
+
+.navbar-link {
+     text-decoration: none;
+     font-size: 18px;
+     color: var(--primary-color);
+}
+
+.navbar-btn {
+     padding: 0 1.6rem;
+     border: none;
+     border-radius: 0.6rem;
+     font-size: 18px;
+     cursor: pointer;
+     color: var(--primary-color);
+}
+
+
+/* Home Section */
+
+.home-container {
+     /* position: relative;
+     z-index: 3; */
+     width: 100%;
+     height: 35.5rem;
+     padding: 0 12.8rem;
+     display: grid;
+     gap: 9rem;
+     grid-template-columns: repeat(2, 1fr);
+     align-items: center;
+     /* justify-items: center; */
+     border-radius: 0 0 245px 0;
+     background-color: var(--background-color);
+
+}
+
+
+.home-container .section-home-data .home-i {
+     position: relative;
+     bottom: -1rem;
+     color: var(--primary-color);
+     font-family: Poppins;
+     font-size: 14px;
+     font-weight: 500;
+     line-height: normal;
+}
+
+.home-container .section-home-data .home-h1 {
+     color: var(--main-color);
+     font-family: Poppins;
+     font-size: 4.2rem;
+     font-style: normal;
+     font-weight: 500;
+     line-height: normal;
+}
+
+.home-container .section-home-data .home-p {
+     margin-top: -0.6rem;
+     color: var(--primary-color);
+     font-family: Poppins;
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: normal;
+}
+
+.home-container .section-home-data .home-btn {
+     margin-top: 1rem;
+     width: 105px;
+     height: 26px;
+     border-radius: 1rem;
+     border: none;
+     background-color: var(--primary-button-background);
+     color: #FAFFFB;
+     font-family: Poppins;
+     font-size: 12px;
+     font-style: italic;
+     font-weight: 500;
+     line-height: normal;
+     cursor: pointer;
+}
+
+.home-container .section-home-data .home-btn:hover{
+    background-color: #ff5100;
+}
+
+
+.home-container .section-home-image {
+     /* position: relative;
+     z-index: -1; */
+     top: 2rem;
+     width: 100%;
+     height: 35.5rem;
+     /* background-color: #5c9ceb; */
+     border-radius: 0 0 30rem 0;
+}
+
+.home-container .section-home-image .home-image {
+
+     position: relative;
+     left: -5rem;
+     top: -1.4rem;
+     width: 805px;
+     height: 412px;
+     flex-shrink: 0;
+     animation: home-image 2s ease-in-out infinite alternate-reverse both;
+     /* filter: drop-shadow(4px 4px 6px #555) */
+
+}
+
+@keyframes home-image {
+     0% {
+          transform: translateY(5px);
+     }
+
+     100% {
+          transform: translateY(-5px);
+     }
+}
+
+
+/* Feature Section */
+
+.feature-container {
+     padding: 0 12.8rem;
+     display: grid;
+     /* grid-column: 2 / span 3; */
+     /* background-color: #5c9ceb; */
+     height: 30rem;
+     justify-content: center;
+     transition: 1.6s;
+}
+
+.feature-container .feature-header {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position: relative;
+     top: 2rem;
+
+}
+
+.feature-container .feature-header .feature-h1 {
+     color: var(--primary-color);
+     font-family: Poppins Medium;
+     font-size: 18px;
+     font-style: normal;
+     font-weight: 200;
+     line-height: normal;
+}
+
+
+.feature-container .feature-display {
+     display: grid;
+     gap: 15rem;
+     grid-template-columns: repeat(3, 1fr);
+     align-items: center;
+     justify-items: center;
+     transition: 1.6s;
+}
+
+
+/* .feature-container .feature-display:hover {
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     transform: scale(1.01);
+} */
+
+.feature-container .feature-display .feature-display-list .feature-image {
+     width: 42px;
+     height: 40px;
+     flex-shrink: 0;
+     mix-blend-mode: multiply;
+     filter: var(--main-color);
+}
+
+
+.feature-container .feature-display .feature-display-list .feature-title {
+     color: var(--main-color);
+     font-family: Poppins;
+     font-size: 18px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: normal;
+}
+
+.feature-container .feature-display .feature-display-list .feature-description {
+     color: var(--paragraph-color);
+     font-family: Poppins;
+     font-size: 12px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: normal;
+}
+
+
+/* Footer Section */
+
+.footer-container {
+     position: relative;
+     top: 22.5rem;
+     width: 100%;
+     height: 4rem;
+     background-color: #e1ede6;
+     display: grid;
+     gap: 9rem;
+     grid-template-columns: repeat(2, 1fr);
+     justify-content: space-between;
+     align-items: center;
+     padding: 0 12.8rem;
+}
+
+.footer-container .footer-project-rights {
+     width: 100%;
+     font-size: 16px;
+     color: var(--paragraph-color);
+}
+
+.footer-container .footer-project-rights .footer-logo  {
+     height: auto;
+     position: relative;
+     top: 0.3rem;
+     max-width: 18%;
+}
+
+.footer-container .footer-project-devloper {
+     display: flex;
+     width: 100%;
+     justify-content: end;
+     font-size: 16px;
+     color: var(--paragraph-color);
+}
+
+.footer-container .footer-project-devloper strong {
+     color: var(--main-color);
+}
