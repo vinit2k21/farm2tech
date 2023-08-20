@@ -4,7 +4,7 @@ const Feature = () => {
      return (
           <div className='feature-container' id='feature'>
                <div className='feature-header'>
-                    <h1 className='feature-h1'>Features</h1>
+                    <h1 className='feature-h1'>Key Features</h1>
                </div>
 
                <div className='feature-display'>
