@@ -16,7 +16,7 @@ const Navbar = () => {
             <NavLink className="navbar-link" to="/contact">Contact Us</NavLink>
           </li>
         <button className='navbar-btn'>Farmer Login</button>
-        <button className='navbar-btn'>Customer Login</button>
+        <button className='navbar-btn' to="/customerLogin">Customer Login</button>
         </ul>
       </div>
     </nav>

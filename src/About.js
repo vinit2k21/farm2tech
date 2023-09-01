@@ -5,7 +5,7 @@ const About = () => {
     <>
       <div className='about-container'>
         <div className='section-about-data'>
-          <h2 className='about-h2'>About,</h2>
+          <h2 className='about-h2'><strong>About,</strong></h2>
           <h1 className='about-h1'>Farm2Tech</h1>
           <p className='about-p'><i>
             Farm2Tech</i> aims to harness digitalization and technological advancements in agriculture to foster rural development. The review aims to understand the significance of digital technologies in management of agricultural products towards end user, identify the challenges and opportunities associated with implementing such projects, and examine existing studies on the impacts of digitalization in rural communities.
